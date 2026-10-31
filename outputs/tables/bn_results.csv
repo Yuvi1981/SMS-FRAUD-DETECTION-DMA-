@@ -1,0 +1,2 @@
+model,test_accuracy,test_precision,test_recall,test_f1,test_roc_auc,train_time_s,pred_time_ms_1k
+Tree-Augmented / Naive Bayesian Network,0.9758,0.9569,0.8473,0.8988,0.9791,0.045,261.57

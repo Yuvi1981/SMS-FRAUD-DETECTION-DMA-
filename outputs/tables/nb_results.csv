@@ -1,0 +1,2 @@
+variant,best_alpha,cv_f1,test_accuracy,test_precision,test_recall,test_f1,test_roc_auc,train_time_s,pred_time_ms_1k
+MultinomialNB (TF-IDF),0.1,0.9449,0.9845,0.96,0.916,0.9375,0.9954,0.3095,1.64

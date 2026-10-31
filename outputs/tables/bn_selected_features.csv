@@ -1,0 +1,19 @@
+feature_name,description,chi2_rank
+numtoken,Presence of token 'numtoken',1
+phonetoken,Presence of token 'phonetoken',2
+numtoken numtoken,Presence of token 'numtoken numtoken',3
+moneytoken,Presence of token 'moneytoken',4
+call phonetoken,Presence of token 'call phonetoken',5
+call,Presence of token 'call',6
+free,Presence of token 'free',7
+txt,Presence of token 'txt',8
+mobil,Presence of token 'mobil',9
+urltoken,Presence of token 'urltoken',10
+claim,Presence of token 'claim',11
+prize,Presence of token 'prize',12
+moneytoken numtoken,Presence of token 'moneytoken numtoken',13
+repli,Presence of token 'repli',14
+tone,Presence of token 'tone',15
+has_url,Message contains URL / hyperlink,991
+has_money,Contains currency symbol or prize keywords,992
+has_phone,Contains phone number token,993

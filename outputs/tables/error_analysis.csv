@@ -1,0 +1,10 @@
+error_type,text,true_label,predicted_label,predicted_spam_prob,root_cause
+False Positive,Hello-/@drivby-:0quit edrunk sorry iff pthis makes no senrd-dnot no how ^ dancce 2 drum n basq!ihave fun 2nhite x ros xx,ham,spam,0.547,Contains commercial/promotional vocabulary or urgent call-to-action in legitimate context.
+False Positive,K k:) sms chat with me.,ham,spam,0.791,Contains commercial/promotional vocabulary or urgent call-to-action in legitimate context.
+False Positive,Your bill at 3 is Â£33.65 so thats not bad!,ham,spam,0.943,Contains commercial/promotional vocabulary or urgent call-to-action in legitimate context.
+False Negative,Babe: U want me dont u baby! Im nasty and have a thing 4 filthyguys. Fancy a rude time with a sexy bitch. How about we g,spam,ham,0.473,Short text lacking explicit prize keywords; uses informal conversational disguise.
+False Negative,"In The Simpsons Movie released in July 2007 name the band that died at the start of the film? A-Green Day, B-Blue Day, C",spam,ham,0.039,Short text lacking explicit prize keywords; uses informal conversational disguise.
+False Negative,"Xmas & New Years Eve tickets are now on sale from the club, during the day from 10am till 8pm, and on Thurs, Fri & Sat n",spam,ham,0.316,Short text lacking explicit prize keywords; uses informal conversational disguise.
+False Negative,"Latest News! Police station toilet stolen, cops have nothing to go on!",spam,ham,0.053,Short text lacking explicit prize keywords; uses informal conversational disguise.
+False Negative,Would you like to see my XXX pics they are so hot they were nearly banned in the uk!,spam,ham,0.143,Short text lacking explicit prize keywords; uses informal conversational disguise.
+False Negative,Burger King - Wanna play footy at a top stadium? Get 2 Burger King before 1st Sept and go Large or Super with Coca-Cola ,spam,ham,0.276,Short text lacking explicit prize keywords; uses informal conversational disguise.

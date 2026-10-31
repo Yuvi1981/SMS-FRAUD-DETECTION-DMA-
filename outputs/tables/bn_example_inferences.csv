@@ -1,0 +1,5 @@
+scenario,evidence,p_spam,p_ham,interpretation
+Baseline Prior (No Evidence),None,0.1264,0.8736,Base dataset prior spam rate is 12.6%.
+Urgent Financial Bait,"has_money=1, free=1, claim=1",1.0,0.0,High concentration of prize and money tokens overwhelmingly indicates spam (>99%).
+Web Link + Call To Action,"has_url=1, call=1, txt=1",1.0,0.0,Aggressive CTA combined with external link sharply elevates spam probability.
+Clean Conversational Text,All spam triggers = 0,0.0003,0.9997,Absence of any trigger words lowers spam risk below 1%.

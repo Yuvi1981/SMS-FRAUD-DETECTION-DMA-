@@ -1,0 +1,4 @@
+model,mae,rmse,mape
+"ARIMA(1,1,1) Forecast",2.48,2.98,12.11
+Naive Baseline (Last Value),2.83,3.49,13.05
+Seasonal Naive (Weekly Lag),4.57,5.35,23.8

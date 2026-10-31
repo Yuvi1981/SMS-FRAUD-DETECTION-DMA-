@@ -1,0 +1,4 @@
+class,count,percentage,avg_chars,avg_words,pct_has_digits,pct_has_url,pct_has_money,pct_has_phone,avg_uppercase_words
+ham,4516,87.37,71.0,14.2,15.81,0.02,2.55,0.07,0.45
+spam,653,12.63,138.1,23.7,94.03,13.78,41.65,51.61,2.69
+total,5169,100.0,79.5,15.4,25.69,1.76,7.49,6.58,0.73

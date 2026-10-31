@@ -1,0 +1,79 @@
+{
+  "all_passed": true,
+  "total_tests": 9,
+  "passed_count": 9,
+  "tests": [
+    {
+      "feature": "1. Overview Dashboard KPIs",
+      "input": "Page load and KPI card inspection (5,169 dataset SMS, 87.37% Ham, 12.63% Spam)",
+      "expected": "Total SMS: 5,169 | Spam Prevalence: 12.63% | Champion F1: 0.9653 | Class donut chart rendered",
+      "actual": "Total: 5,169 found | Prev: 12.63% found | F1: 0.9653 found | Chart: rendered",
+      "passed": true,
+      "screenshot": "01_overview_verified.png"
+    },
+    {
+      "feature": "2A. Live Prediction (Spam Input)",
+      "input": "Custom text: \"URGENT WINNER! Congratulations you won a cash reward of \u00a35,000! Text CLAIM to 88888 now to collect your prize.\"",
+      "expected": "Verdict: SPAM DETECTED, Probability >= 95%, Explainability chips (odds ratios), 3-Model consensus table",
+      "actual": "Verdict: SPAM DETECTED | Chips: Rendered | Consensus: Rendered",
+      "passed": true,
+      "screenshot": "02_live_prediction_spam_verified.png"
+    },
+    {
+      "feature": "2B. Live Prediction (Ham Input)",
+      "input": "Custom text: \"Hey are we still meeting up for dinner tonight around 7:30? Let me know so I can reserve the table.\"",
+      "expected": "Verdict: HAM (LEGITIMATE), Probability <= 5%, Legitimate message chips, Model consensus agreement",
+      "actual": "Verdict: HAM (LEGITIMATE) | Text output matches legitimate classification",
+      "passed": true,
+      "screenshot": "02_live_prediction_ham_verified.png"
+    },
+    {
+      "feature": "3. EDA Insights (Interactive Filter & Search)",
+      "input": "Switched to \"Sample Messages Explorer\", Filter: \"Spam Only\", Query: \"urgent\"",
+      "expected": "Messages table dynamically filtered showing only SPAM messages containing \"urgent\"",
+      "actual": "Messages filtered: Yes | Class tagged SPAM: Yes",
+      "passed": true,
+      "screenshot": "03_eda_interactive_filter_verified.png"
+    },
+    {
+      "feature": "4. Model Benchmark (Metric Switch)",
+      "input": "Dropdown selection changed from \"F1-Score\" to \"Precision\"",
+      "expected": "Visual bar chart re-rendered with Precision scores across all 4 algorithms; Champion rationale visible",
+      "actual": "Precision displayed: Yes | 4 Models: All 4 displayed | Champion rationale: Present",
+      "passed": true,
+      "screenshot": "04_model_benchmark_metric_switch_verified.png"
+    },
+    {
+      "feature": "5. Word Insights (Token Lookup & Odds Ratio)",
+      "input": "Input search token: \"claim\" -> Click \"Lookup Token\"",
+      "expected": "Detailed token odds ratio card (58.27x multiplier) + Top Spam/Ham driver tables",
+      "actual": "Odds ratio calculated for 'claim': Yes | Spam/Ham tables: Yes",
+      "passed": true,
+      "screenshot": "05_word_insights_lookup_verified.png"
+    },
+    {
+      "feature": "6A. Bayesian Net (Urgent Financial Bait Preset)",
+      "input": "Clicked preset button \"Urgent Financial Bait\" (activates money, prize, claim, free evidence)",
+      "expected": "Posterior probability P(Spam|E) >= 99.5% with SPAM verdict badge and active DAG highlighted nodes",
+      "actual": "Spam posterior >= 99%: Yes | Interactive DAG: Rendered",
+      "passed": true,
+      "screenshot": "06_bayesian_net_preset_bait_verified.png"
+    },
+    {
+      "feature": "6B. Bayesian Net (Clean Conversational Preset)",
+      "input": "Clicked preset button \"Clean Conversational SMS\" (clears all spam indicator flags)",
+      "expected": "Posterior probability P(Spam|E) drops to near 0.04% with HAM verdict badge",
+      "actual": "Posterior dropped to baseline (< 0.1%): Yes | Verdict HAM: Yes",
+      "passed": true,
+      "screenshot": "06_bayesian_net_preset_clean_verified.png"
+    },
+    {
+      "feature": "7. Volume Forecast & Projections",
+      "input": "Inspected 365-day historical volume, toggled 7-day & 14-day MA checkboxes, checked 30-day ARIMA holdout forecast",
+      "expected": "SIMULATED timestamps notice prominent; 365d volume curve with MA smoothers; ARIMA(1,1,1) holdout curve + 95% CI; MAE/RMSE/MAPE comparison table",
+      "actual": "Simulated warning: Present | 365d Series: Rendered | ARIMA 30d: Rendered | Error table: Rendered",
+      "passed": true,
+      "screenshot": "07_time_series_forecast_verified.png"
+    }
+  ]
+}

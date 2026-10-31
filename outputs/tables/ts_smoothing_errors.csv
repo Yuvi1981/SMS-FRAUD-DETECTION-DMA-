@@ -1,0 +1,5 @@
+method,mae,rmse,mape
+7-Day Moving Average,2.13,2.56,10.69
+14-Day Moving Average,2.72,3.27,13.54
+Simple Exponential Smoothing (SES),3.21,3.95,17.35
+Holt's Linear Trend Model,3.4,4.17,18.44

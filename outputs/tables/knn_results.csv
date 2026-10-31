@@ -1,0 +1,2 @@
+k,weights,cv_f1,test_accuracy,test_precision,test_recall,test_f1,test_roc_auc,train_time_s,pred_time_ms_1k
+21,distance,0.9069,0.9758,0.9569,0.8473,0.8988,0.9869,0.0026,191.13
